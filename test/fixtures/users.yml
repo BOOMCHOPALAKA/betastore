@@ -1,0 +1,4 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+users:
+  email: moopuna@gmail.com
+  password: $2a$10$/n1dvFTfYAluA.TeOdxqXu24nSxxyX8d8hO4C.bvIt7hls0p202Ha

@@ -1,0 +1,7 @@
+Heroku Postgres info
+
+user name: otdimozwhcdgen
+password: WcCKNB_s3KLcC7vWO5CcjAouYj
+database name: da3vjmqo7d6tu
+host: ec2-54-83-196-217.compute-1.amazonaws.com
+port: 5432

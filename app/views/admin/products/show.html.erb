@@ -1,0 +1,31 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Products", admin_products_path %></li>
+  <li><%= link_to @product.name, admin_products_path(@product) %></li>
+</ol>
+
+  <table>
+    <tr>
+      <th style="text-align: right">name</th>
+      <td style="text-align: left; padding-left: 20px"><%= @product.name %></td>
+    </tr>
+    <tr>
+      <th style="text-align: right">price</th>
+      <td style="text-align: left; padding-left: 20px"><%= number_to_currency @product.price %></td>
+    </tr>
+    <tr>
+      <th style="text-align: right">image</th>
+      <td style="text-align: left; padding-left: 20px"><%=image_tag @product.image_url, alt: @product.image_url %></td>
+    </tr>
+
+    <tr>
+      <th style="text-align: right">Created:</th>
+      <td style="text-align: left; padding-left: 20px"><%= time_ago_in_words @product.created_at %> ago on <%= @product.created_at.strftime('%B %d, %Y @ %k:%M:%S %Z') %></td>
+    </tr>
+
+</table>
+
+
+<%= link_to "Back to products", admin_products_path %>
+<%= link_to "Edit", edit_admin_product_path %>
+<%= link_to "Delete", admin_product_path, method: :delete,
+  confirm: "Are you sure?" %>
